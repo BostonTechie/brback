@@ -2,7 +2,7 @@ import { Router } from 'express'
 import * as quizCtrl from '../controllers/quizzes.js'
 import { checkAuth } from '../middleware/auth.js'
 
-const router = Router ()
+const router = Router()
 
 /*---------- Public Routes ----------*/
 /*---------- Protected Routes ----------*/
