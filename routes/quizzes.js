@@ -8,7 +8,7 @@ const router = Router ()
 /*---------- Protected Routes ----------*/
 router.get('/', checkAuth, quizCtrl.index)
 router.get('/quiz/:id', checkAuth, quizCtrl.show)
-router.post('/quiz', checkAuth, quizCtrl.create)
+router.post('/:id', checkAuth, quizCtrl.create)
 router.put('/quiz/:id', checkAuth, quizCtrl.update)
 router.delete('/quiz/:id', checkAuth, quizCtrl.delete)
 

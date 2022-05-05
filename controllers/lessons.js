@@ -2,9 +2,9 @@ import { User } from '../models/user.js'
 import { Profile } from '../models/Profile.js'
 import { Lesson } from '../models/Lesson.js'
 import { Module } from '../models/Module.js'
+import { Quiz } from '../models/Quiz.js'
 
 function index(req, res) {
-
 }
 
 async function show(req, res) {
