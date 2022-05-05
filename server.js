@@ -14,7 +14,10 @@ import('./config/database.js')
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+  origin:  "https://uceducation.herokuapp.com/", // <-- location of the react app were connecting to
+  credentials: true,
+}))
 app.use(logger('dev'))
 app.use(express.json())
 
